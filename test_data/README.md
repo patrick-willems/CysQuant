@@ -1,0 +1,1 @@
+The test data provided is are the first 20.000 lines of the DIA-NN/plexDIA output report of three CysQuant samples after non-acidic Methanol-chloroform based extraction described in the CysQuant paper. This is relatively smaller and easy for testing.
