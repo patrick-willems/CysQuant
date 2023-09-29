@@ -9,14 +9,14 @@ See below for more information for each input argument and info to perform a tes
 
 ## Input arguments
 **Required arguments**
- *-in INPUT_FILE, --input_file INPUT_FILE
+ ###-in INPUT_FILE, --input_file INPUT_FILE
  Output file of labeled DIA-NN run (Cys IAM labels have to be set!), default name of report is 'report.tsv'
  
- *-fasta FASTA_FILE, --fasta_file FASTA_FILE
-  UniProtKB FASTA file used in the search. Should also work with non-UniProtKB databases but not recommended.
+ ###-fasta FASTA_FILE, --fasta_file FASTA_FILE
+ UniProtKB FASTA file used in the search. Should also work with non-UniProtKB databases but not recommended.
   
- *-ox {L,H}, --label_ox {L,H}
-  Specify the label (either 'L' or 'H' for light/heavy) that was used to label oxidized cysteines (i.e. after DTT/TCEP reduction).
+ ###-ox {L,H}, --label_ox {L,H}
+ Specify the label (either 'L' or 'H' for light/heavy) that was used to label oxidized cysteines (i.e. after DTT/TCEP reduction).
   
 **Optional arguments**
 The optional arguments below are there to set certain quality thresholds on the quantifications to be included in the final report. These are the provided plexDIA Q-values, as well as evidence and correlation scores. In addition, light/heavy only quantified precursors can be included. These are required to have an intensity above the 25% quantile of all quantified L/H Cys precursors in the run (besides other specified quality threshold as for L/H pairs). 
