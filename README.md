@@ -3,7 +3,7 @@
 "CysQuant: Simultaneous quantification of cysteine oxidation and protein abundance using data dependent or independent acquisition mass spectrometry" by Jingjing Huang, An Staes, Francis Impens, Vadim Demichev, Frank Van Breusegem, Kris Gevaert and Patrick Willems. 2023 _Redox Biology_ DOI: https://doi.org/10.1016/j.redox.2023.102908
 
 This repository provides a Python script to convert DIA-NN/plexDIA reports to a matrix of recorded cysteine oxidation degrees (%) in each sample (columns) per cysteine peptide precursor (rows).
-This script is only sensible when using isotopologous IAM labeling followed by plexDIA analysis with correct parameters (see paper for detailed info).
+**This script is only sensible when using isotopologous IAM labeling followed by plexDIA analysis with correct parameters (see paper for detailed info).**
 See below for more information for each input argument and info to perform a test run.
 
 
