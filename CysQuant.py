@@ -9,7 +9,7 @@ __email__       = "willems533@gmail.com"
 __copyright__   = "Copyright 2023, Ghent University"
 
 import re, sys, os, argparse, warnings
-import statistics as stat   #For quantile determination of singletons (only in L/H channel)
+import statistics as stat
 
 #Argument parser
 parser = argparse.ArgumentParser()
@@ -138,7 +138,7 @@ if args.singleton == 1:
     for run in samples: print('  -> '+str(samples[run]['sn_ox'])+' Cys 100% OX, '+str(samples[run]['sn_red'])+' Cys 0% OX')
 
 #Print out CysQuant report
-outfile = 'CysQuant_' + args.input_file
+outfile = args.input_file.replace('.tsv','_CysQuant.tsv')
 print('#Writing out MS1 cysteine oxidation report to '+outfile)
 out = open(outfile,'w')
 out.write('Peptide\tPrecursor\tProteins\tDescription_first\tCysteine_pos\t' + '\t'.join(samples) + '\n')
