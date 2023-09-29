@@ -54,7 +54,8 @@ The optional arguments below are there to set certain quality thresholds on the 
   
   Ms1.Profile.Correlation, a value above this threshold is required in both L and H precursor. Default is -1 (so no filter).
 
-  **Test data**
+ ## Test data
+ 
   Run as follows a test sample:
 
   ```python3 CysQuant.py -in ./test_data/report.tsv -fasta ./test_data/UP000006548_3702.fasta -ox H -single 1```
