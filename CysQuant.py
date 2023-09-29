@@ -109,7 +109,7 @@ for line in f:
 print('  Recorded cysteine oxidation degree per sample:')
 for run in samples:
     average = 100*round((sum(samples[run]['ox'])/len(samples[run]['ox'])),5)
-    print('  -> '+run+': '+str(len(samples[run]['ox']))+' quantified, '+str(average)[0:6]+' average % Cys OX')
+    print('  -> '+run+': '+str(len(samples[run]['ox']))+' Cys quantified, '+str(average)[0:6]+' average % Cys OX')
 
 #Extracting L/H only cys precursors if matching tresholds and above 25% quantile of summed intensities of quantified precursors recorded above
 if args.singleton == 1:
@@ -135,7 +135,7 @@ if args.singleton == 1:
 
     #Print out samples
     print('  Recorded L/H only cysteine peptide precursors per sample:')
-    for run in samples: print('  -> '+str(samples[run]['sn_ox'])+' 100% OX, '+str(samples[run]['sn_red'])+' 0% OX')
+    for run in samples: print('  -> '+str(samples[run]['sn_ox'])+' Cys 100% OX, '+str(samples[run]['sn_red'])+' Cys 0% OX')
 
 #Print out CysQuant report
 outfile = 'CysQuant_' + args.input_file
