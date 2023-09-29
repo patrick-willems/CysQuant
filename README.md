@@ -11,9 +11,10 @@ See below for more information for each input argument and info to perform a tes
 **Required arguments**
 
  ```-in INPUT_FILE, --input_file INPUT_FILE```
- Output file of labeled DIA-NN run (Cys IAM labels have to be set!), default name of report is 'report.tsv'
  
- -fasta FASTA_FILE, --fasta_file FASTA_FILE
+ DIA-NN/plexDIA main output report (default: report.tsv)
+ 
+ ```-fasta FASTA_FILE, --fasta_file FASTA_FILE```
  UniProtKB FASTA file used in the search. Should also work with non-UniProtKB databases but not recommended.
   
  -ox {L,H}, --label_ox {L,H}
